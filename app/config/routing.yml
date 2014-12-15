@@ -1,0 +1,3 @@
+alydine_front:
+    resource: "@AlydineFrontBundle/Resources/config/routing.yml"
+    prefix:   /
