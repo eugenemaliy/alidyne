@@ -1,0 +1,6 @@
+.git/
+.gitignore
+app/cache/*
+vendor/*
+.DS_Store
+app/logs/*

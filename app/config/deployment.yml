@@ -1,0 +1,5 @@
+servers:
+    prod:
+        host: 37.187.124.204
+        user: root
+        dir: /var/www/
