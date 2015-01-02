@@ -192,7 +192,6 @@
 
 			$('.home li > img').each(function(){
 				$(this).css('background-image', 'url(' + $(this).attr('src') + ')')
-					   .attr('src', '../images/1x1.png')
 					   .height($(window).height());
 			});
 		},0)
@@ -698,7 +697,6 @@
             var marker = new google.maps.Marker({
 				position: myLatLng,
 				map: map,
-				icon: 'images/map/location-icon.png',
 				title: '',
 			});
 
