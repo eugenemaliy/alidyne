@@ -285,7 +285,7 @@ p.mini{
 		animation-duration: 0.5s;
 	}
 	.slider-text-wrapper .big{
-		font-size: 110px;
+		font-size: 80px;
 		line-height: 110px;
 		margin-top: 20px;
 
@@ -309,6 +309,7 @@ p.mini{
 .slider-logo{
 	font: 100px/100px "Snell Roundhand";
 	margin-bottom: 85px;
+	margin-top: 50px;
 
     -moz-transition: all 0.3s linear 0s;
     -webkit-transition: all 0.3s linear 0s;

@@ -1,1 +1,438 @@
-Put your HTML here !
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>AlyDïne - Restaurant Marocain</title>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/jquery/magnific-popup.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/animate/animate.css') }}" />
+	<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Merriweather:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/font-awesome.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap.min.css') }}" />
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}" />
+</head>
+
+<body>
+    <img id="preloader" alt="" src="{{ asset('images/preloader/preloader.GIF') }}">
+    <div class="page-wrapper">
+        <header id="header" class="header">
+            <div class="container">
+                <a class="logo pull-left slide-page" href="#home"><img style="max-width:100px; margin-top: -7px;" src="{{ asset('images/logo.png')}}"></a>
+                <em id="mobileMenu" class="glyph fa-bars mobile-menu"></em>
+                <nav id="mainNavi" class="main-navi pull-right">
+                    <a href="#home">Acceuil</a>
+                    <a href="#restaurant">Présentation</a>
+                    <a href="#menu">Menu</a>
+                    <a href="#contacts">Réserver une table</a>
+                </nav>
+            </div>
+        </header>
+        <section id="home" class="home">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="slider-text-wrapper first">
+                            <div class="slider-logo">AlyDïne</div>
+                            <div class="big">Restaurant Marocain</div>
+                            <div class="dot"></div>
+                            <p></p>
+                          </br>
+                        </br>
+                      </br>
+                            <a class="button slide-page" href="#restaurant">
+                                <span>Découvrir</span>
+                                <span>Découvrir</span>
+                            </a>
+                        </div>
+                        <img class="parallax-toto" src="{{ asset('images/big-slider/1.jpg') }}" alt="">
+                    </li>
+                </ul>
+            </div>
+            <img class="scroll-image" src="{{ asset('images/icons/scroll.png') }}" alt="">
+        </section>
+        <section id="restaurant" class="restaurant images-bg animate">
+            <div class="container">
+                <div class="title">
+                    <div></div>
+                    Bienvenue chez AlyDïne
+                </div>
+                <div class="row">
+                    <div class="col-md-20 col-md-offset-20 restaurant-block">
+                        <p class="mini">Découvrir une fine cuisine marococaine, un spectacle époustouflant et un service attentionné dans un cadre digne des mille et une nuits.
+
+                          Que ce soit pour un souper en tête à tête, un repas entre amis, un party de bureau ou une soirée familiale, vous passerez une soirée inoubliable... Chez AlyDïne, vous vivrez un dépaysement absolu!.</p>
+                          <div class="dot"></div>
+                    </div>
+                  </div>
+            </div>
+            <img src="{{ asset('images/about/1.jpg') }}" alt="">
+        </section>
+        <section id="menu" class="menu animate">
+            <div class="clearfix">
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/1.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-fire"></em>
+                            <span>Hot</span>
+                        </div>
+                        <div class="food-name">Mussels with nduja</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/2.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-pagelines"></em>
+                            <span>Salads</span>
+                        </div>
+                        <div class="food-name">Chestnut tagliatelle</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/3.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-beer"></em>
+                            <span>For Drink</span>
+                        </div>
+                        <div class="food-name">Panipuri at Sakonis</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/4.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-cutlery"></em>
+                            <span>Pasta</span>
+                        </div>
+                        <div class="food-name">Walnut miso udon at Koya</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/5.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-cutlery"></em>
+                            <span>Soup</span>
+                        </div>
+                        <div class="food-name">Lagman noodles at Samarqand</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/6.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-cutlery"></em>
+                            <span>Pasta</span>
+                        </div>
+                        <div class="food-name">Kedgeree at The Wolseley</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/7.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-cutlery"></em>
+                            <span>Pasta</span>
+                        </div>
+                        <div class="food-name">Khow suey at Mandalay</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/8.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-pagelines"></em>
+                            <span>Salads</span>
+                        </div>
+                        <div class="food-name">Veal chop at Zucca</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/9.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-beer"></em>
+                            <span>For Drink</span>
+                        </div>
+                        <div class="food-name">Chargrilled quail at Song Que</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/10.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-fire"></em>
+                            <span>Hot</span>
+                        </div>
+                        <div class="food-name">Pie and Mash</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/11.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-beer"></em>
+                            <span>For Drink</span>
+                        </div>
+                        <div class="food-name">Grilled razor clams at José</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/12.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-pagelines"></em>
+                            <span>Salads</span>
+                        </div>
+                        <div class="food-name">Bocca di Lupo</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/13.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-pagelines"></em>
+                            <span>Salads</span>
+                        </div>
+                        <div class="food-name">Baby gem Salad</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/14.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-cutlery"></em>
+                            <span>Dessert</span>
+                        </div>
+                        <div class="food-name">Opera Tavern</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/15.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-cutlery"></em>
+                            <span>Pasta</span>
+                        </div>
+                        <div class="food-name">To Die for Crock Pot Roast</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-4 menu-block">
+                    <img src="{{ asset('images/food/16.jpg') }}" alt="">
+                    <div>
+                        <div class="position">
+                            <em class="glyph fa-fire"></em>
+                            <span>Hot</span>
+                        </div>
+                        <div class="food-name">Grilled Pork Chop</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="popup" class="popup">
+            <div class="clearfix">
+                <article class="col-lg-6 col-md-6 col-sm-6">
+                    <img src="{{ asset('images/food/big/1.jpg') }}" alt="">
+                </article>
+                <article class="col-lg-6 col-md-6 col-sm-6">
+                    <div class="details-wrapper">
+                        <div class="position">
+                            <em class="glyph fa-pagelines"></em>
+                            <span>Salads</span>
+                        </div>
+                        <div class="food-name">To Die for Crock Pot Roast</div>
+                        <div class="price">$64.99</div>
+                        <p class="food-details mini">Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia qui ratione voluptatem.</p>
+                    </div>
+                </article>
+                <a href="" class="button glyph prev fa-angle-left"></a>
+                <a href="" class="button close-button">Close</a>
+                <a href="" class="button glyph next fa-angle-right"></a>
+            </div>
+        </section>
+        <section id="contacts" class="contacts images-bg animate">
+          <div class="container">
+            <div class="title">
+              <div></div>
+              Réserver une table
+            </div>
+            <form id="ajax-contact-form" action="javascript:void(0);">
+              <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <input name="name" placeholder="Nom" type="text">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <input name="email" id="email" placeholder="Email" type="text">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <input name="phone" id="phone" placeholder="Téléphone" type="text">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <input name="amount" id="amount" placeholder="Nombre de personne" type="text">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <input name="date" id="date" placeholder="Date" type="text">
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                  <input name="time" id="time" placeholder="Heure" type="text">
+                </div>
+              </div>
+              <a class="button" id="submit" href="">
+                <span>Réserver</span>
+                <span>Réserver</span>
+              </a>
+            </form>
+          </div>
+          <img src="{{ asset('images/contacts/1.jpg') }}" alt="">
+        </section>
+        <section id="reservation" class="reservation animate">
+            <div class="clearfix">
+                <div class="col-lg-3 col-md-3 col-sm-6 reservation-block">
+                    <a href="{{ asset('images/reservation/big/1.jpg') }}">
+                        <img src="{{ asset('images/reservation/1.jpg') }}" alt="">
+                        <span>
+                            <em class="glyph fa-search"></em>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 reservation-block">
+                    <a href="{{ asset('images/reservation/big/2.jpg') }}">
+                        <img src="{{ asset('images/reservation/2.jpg') }}" alt="">
+                        <span>
+                            <em class="glyph fa-search"></em>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 reservation-block">
+                    <a href="{{ asset('images/reservation/big/3.jpg') }}">
+                        <img src="{{ asset('images/reservation/3.jpg') }}" alt="">
+                        <span>
+                            <em class="glyph fa-search"></em>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-6 reservation-block">
+                    <a href="{{ asset('images/reservation/big/4.jpg') }}">
+                        <img src="{{ asset('images/reservation/4.jpg') }}" alt="">
+                        <span>
+                            <em class="glyph fa-search"></em>
+                        </span>
+                    </a>
+                </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <article class="opening">
+                    <div class="row">
+                        <strong>Horaires d'ouverture</strong>
+                        <div class="opening-hours">
+                            <span>Lundi</span>
+                            <div>10:00 - 22:00</div>
+                        </div>
+                        <div class="opening-hours">
+                            <span>Mardi</span>
+                            <div>10:00 - 22:00</div>
+                        </div>
+                        <div class="opening-hours">
+                            <span>Mercredi</span>
+                            <div>10:00 - 22:00</div>
+                        </div>
+                        <div class="opening-hours">
+                            <span>Jeudi</span>
+                            <div>10:00 - 22:00</div>
+                        </div>
+                        <div class="opening-hours">
+                            <span>Vendredi</span>
+                            <div>10:00 - 22:00</div>
+                        </div>
+                        <div class="opening-hours">
+                            <span>Samedi</span>
+                            <div>12:00 - 00:00</div>
+                        </div>
+                        <div class="opening-hours">
+                            <span>Dimanche</span>
+                            <div>Fermé</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="address row">
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="clearfix">
+                            <strong class="pull-left">Address</strong>
+                            <span>Restetro Restaurant<br>25 Bich St., New York, NY 10002<br><br></span>
+                            <a id="showMap" href="">SHOW ON THE MAP</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6">
+                        <div class="clearfix">
+                            <strong class="pull-left">Phone</strong>
+                            <span class="phone">05 01 02 03 04</span>
+                        </div>
+                        <div class="clearfix">
+                            <strong class="pull-left">E-mail</strong>
+                            <a href="">contact@alydine.com</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="share-button">
+                            <a class="glyph fa-twitter" href=""></a>
+                            <a class="glyph fa-facebook" href=""></a>
+                            <a class="glyph fa-linkedin" href=""></a>
+                            <a class="glyph fa-pinterest" href=""></a>
+                            <a class="glyph fa-flickr" href=""></a>
+                        </div>
+                        <span>© AlyDïne 2015 . Tous droits réservés.</span>
+                    </div>
+                </article>
+                <a href="#home" class="glyph fa-angle-up move-up slide-page"></a>
+            </div>
+        </footer>
+        <div id="map" class="map clearfix"></div>
+    </div>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaXCxqnCwD2cQ4RE_WuFfW0ECKkYBelhU&sensor=true"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery/jquery.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery/jquery.mb.YTPlayer.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery/jquery.flexslider-min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery/jquery.parallax-1.1.3.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery/jquery.countTo.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery/jquery.scrollTo-min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/jquery/jquery.magnific-popup.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/bootstrap/bootstrap.min.js') }}"></script>
+	<script type="text/javascript" src="{{ asset('js/custom.script.js') }}"></script>
+	</body>
+</html>

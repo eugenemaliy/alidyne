@@ -71,3 +71,15 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+#madalynn_plum
+madalynn_plum:
+    options: # Global options
+        dry_run: false
+        rsync_exclude: "%kernel.root_dir%/config/rsync_exclude.txt"
+        commands:
+            - 'php app/console cache:clear --env=prod --no-debug'
+    deployers:
+        - Plum\Deployer\RsyncDeployer
+        - Plum\Deployer\SshDeployer
+    servers_file: "%kernel.root_dir%/config/deployment.yml"

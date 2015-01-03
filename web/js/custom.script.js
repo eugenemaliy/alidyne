@@ -192,7 +192,6 @@
 
 			$('.home li > img').each(function(){
 				$(this).css('background-image', 'url(' + $(this).attr('src') + ')')
-					   .attr('src', '../images/1x1.png')
 					   .height($(window).height());
 			});
 		},0)
@@ -578,32 +577,32 @@
 	        var flag = true;
 
 	        if(/\D/.test($('#time').val()) || !$('#time').val().length){
-	            $('#time').val('').attr('placeholder','please enter time').addClass('error');
+	            $('#time').val('').attr('placeholder','Renseigner une heure').addClass('error');
 	            flag = false;
 	        }
 
 	        if(/\D/.test($('#date').val()) || !$('#date').val().length){
-	            $('#date').val('').attr('placeholder','please enter day').addClass('error');
+	            $('#date').val('').attr('placeholder','Renseigner un jour').addClass('error');
 	            flag = false;
 	        }
 
 	        if(/\D/.test($('#phone').val()) || !$('#phone').val().length){
-	            $('#phone').val('').attr('placeholder','please enter phone number').addClass('error');
+	            $('#phone').val('').attr('placeholder','Renseigner un numéro de téléphone').addClass('error');
 	            flag = false;
 	        }
 	        if(!/^[-\w.]+@([A-z0-9][-A-z0-9]+\.)+[A-z]{2,4}$/.test($('#email').val())){
-	            $('#email').val('').attr('placeholder','please enter correct e-mail').addClass('error');;
+	            $('#email').val('').attr('placeholder','Renseigner un email valide').addClass('error');;
 	            flag = false;
 	        }
 	        if(flag){
 	            $(this).parents('form').submit();
 	            $(this).addClass('success').find('span:eq(1)').html('success');
 	        }else{
-	        	$(this).addClass('error').find('span:eq(1)').html('error');
+	        	$(this).addClass('error').find('span:eq(1)').html('Erreur');
 	        }
 
 	        setTimeout(function(){
-	        	$('#submit').removeClass('error success').find('span:eq(1)').html('book a table');
+	        	$('#submit').removeClass('error success').find('span:eq(1)').html('réserver');
 	        }, 3000)
 
 	        return false;
@@ -698,7 +697,6 @@
             var marker = new google.maps.Marker({
 				position: myLatLng,
 				map: map,
-				icon: 'images/map/location-icon.png',
 				title: '',
 			});
 
