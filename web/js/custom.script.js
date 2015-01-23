@@ -684,9 +684,9 @@
 
         /*----------  MAP  ----------*/
         if($('#map').length){
-        	var myLatLng = new google.maps.LatLng(23.73176,90.40640);
+        	var myLatLng = new google.maps.LatLng(45.0012179,-1.1984635999999682);
             var mapOptions = {
-                zoom: 8,
+                zoom: 18,
                 center: myLatLng,
                 scrollwheel: false,
                 streetViewControl : true
