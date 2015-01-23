@@ -1,0 +1,116 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+	<section id="pictures">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Photos</h1>
+				</div>
+				<div class="col-md-12">
+					<div id="pictures-box" class="row">
+						{% for picture in pictures %}
+							<div class="col-md-3 text-center">
+								<img class="picture-overview" src="/upload/{{ picture.name }}"/>
+								<i data-api="{{ path("alydine_remove_picture") }}" data-name="{{ picture.name }}" class="fa fa-times"></i>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+				<div class="col-md-offset-5 col-md-2 text-center">
+					<button id="btn-upload-picture" class="btn btn-primary">Ajouter une photo</button>
+					<input data-api="{{ path("alydine_upload_picture") }}" id="upload-picture" class="hide" type="file">
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="menu">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Menu</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="booking">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1>Réservation</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+{% block javascripts %}
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+	$("#btn-upload-picture").click(function(){
+		$("#upload-picture").trigger("click");
+	});
+
+	$('#upload-picture').change(function(){
+		var value = $(this).val();
+		console.log(value);
+		if (value == '') { return ;}
+		console.log('Upload picture');
+		var api = $('#upload-picture').attr('data-api');
+		var data = new FormData();
+		data.append('_image', $('#upload-picture')[0].files[0]);
+		$.ajax({
+			url:api,
+			type:'POST',
+			data:data,
+			dataType:'text',
+			contentType:false,
+			processData:false,
+			cache:false,
+			success: function(data) {
+				console.log(data);
+				var obj = $.parseJSON(data);
+				if (obj.status == 'error') {
+					console.log(obj);
+				} else {
+					$("#pictures-box").append("<div class=\"col-md-3 text-center\"><img class=\"picture-overview\" src=\"/upload/" + obj.name + "\"/></div>");
+				}
+			},
+			error: function(data, jqXHR, textStatus, errorThrown) {
+				console.log(data);
+			}
+		});
+	});
+
+	$(".fa-times").click(function(){
+		console.log('Remove picture');
+		var api = $(this).attr('data-api');
+		var data = new FormData();
+		data.append('_image_name', $(this).attr('data-name'));
+		var pictureContainer = $(this).parent();
+		$.ajax({
+			url:api,
+			type:'POST',
+			data:data,
+			dataType:'text',
+			contentType:false,
+			processData:false,
+			cache:false,
+			success: function(data) {
+				console.log(data);
+				pictureContainer.fadeOut();
+			},
+			error: function(data, jqXHR, textStatus, errorThrown) {
+				console.log(data);
+			}
+		});
+	});
+
+});
+
+</script>
+
+{% endblock %}

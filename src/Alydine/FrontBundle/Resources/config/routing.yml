@@ -1,3 +1,19 @@
 alydine_front_homepage:
     path:     /
     defaults: { _controller: AlydineFrontBundle:Default:index }
+
+alydine_admin:
+    path: /admin
+    defaults: { _controller: AlydineFrontBundle:Default:admin }
+
+alydine_register:
+    path: /register
+    defaults: { _controller: AlydineFrontBundle:Default:register }
+
+alydine_upload_picture:
+    path: /admin/upload-picture
+    defaults: { _controller: AlydineFrontBundle:Default:uploadPicture }
+
+alydine_remove_picture:
+    path: /admin/remove-picture
+    defaults: { _controller: AlydineFrontBundle:Default:removePicture }

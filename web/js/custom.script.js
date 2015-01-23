@@ -596,7 +596,7 @@
 	        }
 	        if(flag){
 	            $(this).parents('form').submit();
-	            $(this).addClass('success').find('span:eq(1)').html('success');
+	            $(this).addClass('success').find('span:eq(1)').html('Envoyé !');
 	        }else{
 	        	$(this).addClass('error').find('span:eq(1)').html('Erreur');
 	        }
@@ -618,9 +618,9 @@
 				success: function(msg) {
 					// Message Sent - Show the 'Thank You' message and hide the form
 					if(msg == 'OK') {
-						$(this).addClass('success').find('span:eq(1)').html('success');
+						$(this).addClass('success').find('span:eq(1)').html('Envoyé !');
 					} else {
-						$(this).addClass('error').find('span:eq(1)').html('error');
+						$(this).addClass('error').find('span:eq(1)').html('Erreur');
 					}
 				}
 			});

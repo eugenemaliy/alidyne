@@ -18,7 +18,9 @@
         "sensio/distribution-bundle": "~3.0",
         "sensio/framework-extra-bundle": "~3.0",
         "incenteev/composer-parameter-handler": "~2.0",
-        "madalynn/plum-bundle": "dev-master"
+        "madalynn/plum-bundle": "dev-master",
+        "friendsofsymfony/user-bundle": "~2.0@dev",
+        "jms/serializer-bundle": "@dev"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"

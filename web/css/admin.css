@@ -1,0 +1,33 @@
+body {
+	background-color: #000000 !important;
+	color:#fff !important;
+}
+
+.logo {
+	width: 100%;
+	height: auto;
+}
+
+.home-link {
+	display: inline-block;
+	margin: 20px 0 0 10px;
+	color:#fff;
+}
+
+.home-link:hover {
+	color:#fff;
+}
+
+section {
+	padding-top: 50px;
+	min-height:100vh;
+}
+
+.picture-overview {
+	width:100%;
+	margin-bottom: 10px;
+}
+
+.fa-times {
+	cursor:pointer;
+}
